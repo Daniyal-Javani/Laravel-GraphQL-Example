@@ -101,14 +101,14 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-                // 'example_query' => ExampleQuery::class,
+                'users' => App\GraphQL\Queries\UsersQuery::class
             ],
             'mutation' => [
                 // 'example_mutation'  => ExampleMutation::class,
             ],
             'middleware' => [],
             'method' => ['get', 'post'],
-        ],
+        ]
     ],
 
     // The types available in the application. You can then access it from the
@@ -124,6 +124,7 @@ return [
         // 'example'           => ExampleType::class,
         // 'relation_example'  => ExampleRelationType::class,
         // \Rebing\GraphQL\Support\UploadType::class,
+        'user' => App\GraphQL\Types\UserType::class
     ],
 
     // The types will be loaded on demand. Default is to load all types on each request
