@@ -101,10 +101,10 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-                'users' => App\GraphQL\Queries\UsersQuery::class
+                'users' => App\GraphQL\Queries\UsersQuery::class,
             ],
             'mutation' => [
-                // 'example_mutation'  => ExampleMutation::class,
+                'updateUserPassword' => App\GraphQL\Mutations\UpdateUserPasswordMutation::class,
             ],
             'middleware' => [],
             'method' => ['get', 'post'],
