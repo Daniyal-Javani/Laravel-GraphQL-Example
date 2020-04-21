@@ -105,6 +105,7 @@ return [
             ],
             'mutation' => [
                 'updateUserPassword' => App\GraphQL\Mutations\UpdateUserPasswordMutation::class,
+                'updateUserEmail' => App\GraphQL\Mutations\UpdateUserEmailMutation::class,
             ],
             'middleware' => [],
             'method' => ['get', 'post'],
